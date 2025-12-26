@@ -32,7 +32,7 @@ export default function AdminLoginPage() {
     if (!show2FA) {
       await new Promise((resolve) => setTimeout(resolve, 1500))
 
-      if (formData.email === "admin" && formData.password === "admin@123") {
+      if (formData.email === "admin1" && formData.password === "admin1@123") {
         setIsLoading(false)
         setShow2FA(true)
       } else {
