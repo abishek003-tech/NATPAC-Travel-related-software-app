@@ -26,6 +26,22 @@ export default function AdminHomePage() {
     router.push("/")
   }
 
+  const handleCardClick = (title: string) => {
+    switch (title) {
+      case "User Management":
+        router.push("/admin-home/users")
+        break
+      case "Analytics":
+        router.push("/admin-home/analytics")
+        break
+      case "System Health":
+        router.push("/admin-home/system-health")
+        break
+      default:
+        break
+    }
+  }
+
   const adminCards = [
     {
       icon: Users,
@@ -207,6 +223,7 @@ export default function AdminHomePage() {
                 key={card.title}
                 className="ios-scale-in group cursor-pointer"
                 style={{ animationDelay: `${0.15 + index * 0.05}s` }}
+                onClick={() => handleCardClick(card.title)}
               >
                 <div
                   className="rounded-[20px] sm:rounded-[24px] p-5 sm:p-6 border border-white/30 shadow-xl ios-transition hover:scale-105 hover:shadow-2xl"
