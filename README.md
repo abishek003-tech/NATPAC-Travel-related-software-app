@@ -14,7 +14,7 @@ Any changes you make to your deployed app will be automatically pushed to this r
 
 Your project is live at:
 
-**[https://vercel.com/siddusiddharth2006-5551s-projects/v0-login-and-admin-pages](https://vercel.com/siddusiddharth2006-5551s-projects/v0-login-and-admin-pages)**
+**https://v0-login-and-admin-pages-tawny.vercel.app/**
 
 ## Build your app
 
